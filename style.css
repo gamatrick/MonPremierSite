@@ -1,0 +1,60 @@
+p {
+    color: red;
+    font-size: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+div.burger {
+    width: 25px;
+    height: 25px;
+    background-image: url('images/burger.png');
+    display: none;
+   }
+
+div.close {
+    background-image: url('images/close.png');
+    }
+
+nav{
+    display: flex;
+}
+nav li {
+    display: flex;
+    list-style: none;
+    margin: 0px 20px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+
+}
+
+/* On fait le responsive pour téléphone de 600px */
+@media only screen and (max-width: 600px) {
+    p {
+        color: blue;
+    }
+
+    nav {
+        flex-direction: column;
+        display: block;
+    }
+
+    div.burger {
+        display: block;
+    }
+    .open + nav {
+        display: block;
+    }
+
+    nav li {
+        text-align: center;
+    }
+  }
